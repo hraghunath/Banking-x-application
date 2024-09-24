@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Bank_X_Application
+    
+
+  datasource:
+    url: jdbc:h2:mem:bankx
+    driverClassName: org.h2.Driver
+    username: root
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
